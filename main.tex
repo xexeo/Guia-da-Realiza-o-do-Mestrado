@@ -1,0 +1,186 @@
+\documentclass{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{csquotes}
+\usepackage[english,brazilian]{babel}
+\usepackage{graphicx}
+\usepackage[citestyle=authoryear,articlein=false,style=ext-authoryear-comp,backend=biber,natbib=true]{biblatex}
+\addbibresource{biblio.bib}
+\usepackage{outlines}
+\usepackage{hyperref}
+
+\newcommand{\listalivro}[1]{\citetitle{#1}, de \citet{#1}.}
+\addtolength{\parskip}{0.4em}
+
+\title{Guia da Realização do Mestrado}
+\author{Geraldo Xexéo}
+\date{April 2021}
+
+
+
+
+\begin{document}
+%\fontfamily{cmss}\selectfont
+
+\makeatletter
+\begin{titlepage}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{imagens/logo-line-modificado.PNG}
+\par
+\includegraphics[width=0.8\textwidth]{imagens/LUDES_PP-03.png}
+\par
+\vspace{3cm}  
+\Huge{\textbf{\@title}}
+\\[1cm]
+\LARGE
+\@author
+\\[.3cm]
+\normalsize
+\today
+\end{center}
+\end{titlepage}
+\thispagestyle{empty}
+\makeatother
+
+
+\maketitle
+
+\frontmatter
+\tableofcontents
+
+  \mainmatter
+
+\chapter{Introdução}
+
+Ao contrário do Guia dos Orientados\footnote{\url{http://www.xexeo.net/ensino/guia-dos-orientados/}}, que eu distribuo livremente e é bem geral, este guia é apenas para os meus orientados, ou pelo menos aos interessados em minha orientação. Ele é específico da COPPE/UFRJ, do Programa de Engenharia de Sistemas e Computação, e apresenta regras que só valem sob a minha orientação. 
+
+%Se você é meu orientado, esse guia é praticamente um contrato entre nós dois.
+
+Os cursos da COPPE possuem uma regulamentação que pode ser obtida na Web\footnote{\url{https://coppe.ufrj.br/sites/default/files/arquivo_cpgp/Alunos_a_partir_2017.1.pdf}}. Recomenda-se fortemente aos alunos ler a regulamentação.
+
+O aluno é classificado como \textit{inscrito ao mestrado} ou, após fazer o Seminário de Mestrado, como \textit{candidato ao mestrado}
+
+\section{Prazos Oficiais}
+
+Para poder defender a dissertação, o aluno deve passar de aluno a candidato, por meio de um Seminário de Mestrado, que tem o prazo de 2 anos desde a entrada do aluno, sem nenhuma chance de extensão. 
+
+No Programa de Engenharia de Sistemas e Computação (PESC) o formato desse seminário é de escolha do professor.
+
+O aluno da COPPE tem 3 anos para terminar a dissertação de mestrado, com direito a pedir duas extensões de 3 meses\footnote{\url{https://coppe.ufrj.br/sites/default/files/arquivo_cpgp/Resolucao_01.2018.pdf}} ao Colegiado do Programa.
+
+As bolsas CAPES e CNPq duram 2 anos, que no PESC são contados a partir da data de entrada dos alunos, e não da data de recebimento da bolsa.
+
+A bolsa da FAPERJ para os melhores alunos, que são adicionais a bolsa da CAPES ou CNPq, tem a duração de 1 ano, que é o segundo ano do aluno no PESC.
+
+A COPPE pode fornecer extensões por motivo de saúde e gravidez.
+
+\section{A realidade dos prazos}
+
+Na COPPE temos 4 períodos, e o quarto período não é muito produtivo, pois se passa no final de ano, nas férias dos professores, e muitas vezes no Carnaval.
+
+O ideal é que o aluno acabe sua dissertação em dois anos. Para isso deve defender o seu Seminário de Mestrado antes desse prazo, de preferência em torno de 12 a 18 meses após entrar no mestrado.
+
+Para isso é importante que o aluno:
+\begin{itemize}
+    \item Tenha um orientador desde cedo, de preferência após o segundo período e, para os que entram em março, antes do fim do ano.
+    \item Escolha o tema entre o terceiro e quarto período, aproveitando o quarto período para pesquisar sobre os possíveis temas.
+    \item Tenha  tema e orientador escolhidos antes do início seu quinto período no mestrado, em geral antes de março.
+\end{itemize}
+
+
+
+\section{As notas da COPPE}
+
+Esse texto apresenta um processo para fazer a dissertação de mestrado e as regras de avaliação.
+
+A cada período o aluno recebe uma nota entre A, B, C e D, onde A vale 3,0 e é excelente trabalho, B vale 2,0 e é bom trabalho, C vale 1,0 e é insuficiente para defender a tese e D vale 0,0 (zero) e é uma reprovação.
+
+Para defender a tese o aluno só pode ter uma nota D, que deve ser compensada pela mesma cadeira, ou outra cadeira com permissão do orientador, além da média B.
+
+
+
+\chapter{Como é uma defesa de dissertação}
+
+Uma defesa de dissertação é um apresentação formal da mesma, pelo candidato, a uma banca de doutores.
+
+Esses doutores são propostos pelo orientador, normalmente em acordo com o orientado, a um órgão colegiado.
+
+A banca deve cumprir requisitos, atualmente segundo o regulamento que pode ser obtido  \href{https://coppe.ufrj.br/pt-br/node/3464}{no site da COPPE}\footnote{\url{https://coppe.ufrj.br/sites/default/files/arquivo_cpgp/diretrizesbancas.pdf}}.
+
+O candidato ao mestrado deve entregar a sua dissertação à banca entre 15 a 21 dias antes, porém esse prazo pode ser menor ou maior de acordo com às circunstâncias. 
+
+\chapter{As fases da dissertação}
+
+A dissertação pode ser dividida em 4 fases:
+\begin{enumerate}
+    \item Descoberta do Tema
+    \item Pesquisa do Estado da Arte do Tema
+    \item Investigação do Tema
+    \item Conclusão da Dissertação
+\end{enumerate}
+
+\chapter{O Seminário de Mestrado}
+
+Os meus alunos devem apresentar um Seminário de Mestrado que cumpra os seguintes requisitos:
+\begin{itemize}
+    \item Entregar, 10 dias antes da data do seminário, um documento no formato de artigo de congresso IEEE, de 10 a 20 páginas, com uma descrição de sua tese.
+    \item Fazer uma apresentação formal de até 40 minutos, sobre a sua tese, depois da qual será questionado por mim, por uma possível banca convidada e pela plateia, especialmente os alunos de doutorado.
+    \item Ser aprovado por mim e pela banca convidada.
+\end{itemize}
+
+Serão considerados \textbf{aprovados} no Seminário de Mestrado os alunos que apresentarem e tiverem publicado um artigo completo em um Simpósio Brasileiro patrocinado pela SBC, ou um congresso internacional patrocinado pela ACM, IEEE, IGDA, ABSEL, ou outra sociedade em acordo comigo. Obviamente, uma publicação em revista indexada, ou em revista Qualis B2 ou melhor. Em todo caso, o aluno ainda deve fazer a apresentação do seu tema a uma plateia convidada.
+
+\chapter{Práticas Acadêmicas}
+
+\section{Publicações}
+
+É praxe na Computação e no PESC que os orientados, ao escrever um artigo dentro do contexto do Programa, convidem o orientador para participar como autor. 
+
+Eu devo participar das publicações relativas a sua dissertação. Essa prática difere de outras áreas, mas tendo em vista a carga de trabalho e participação de um orientado na Computação, é considerada de praxe. 
+
+Já \textbf{se você vai publicar} com outro professor, ou se vai publicar sozinho ou com alunos, deve me avisar e possivelmente \textbf{me convidar para participar} antes de apresentar a publicação ao congresso ou revista. Eu decidirei com você se devo ou não participar. 
+
+É comum que eu decida não participar se o artigo não tiver relação com meu trabalho, ou com nossas discussões durante a relação aluno-orientador. 
+
+Deixando claro, alguns alunos já publicaram artigos usando tudo que trabalhamos juntos e aplicando a outra área e não me chamaram para co-autor, com o agravante que os orientadores de outros participantes entraram. Uma aluna chegou a me apresentar uma artigo, sem meu nome, com o nome do outro orientador apenas, onde grande parte do trabalho teórico era meu. Isso é inadmissível. 
+
+Não vou participar, é claro, de trabalhos realizados anteriormente a orientação e que não tenham se aproveitado da mesma.
+
+Pode acontecer, porém, de eu querer colaborar com o artigo, e aí decidiremos se essa colaboração é necessária ou não. Já aconteceu de alunos cuidadosos me convidarem, gentilmente, para participar de trabalhos que foram realizados no seu Trabalho de Conclusão de Curso, por estarem sob minha orientação, e eu, também gentilmente, recusei.
+
+Eventualmente eu já retirei meu nome de artigos que considerava não merecer ser publicados, tanto por causa do artigo, quanto por causa do veículo, como no caso de editoras predatórias.
+
+Isso significa também que \textbf{você não deve colocar meu nome como autor sem minha autorização}.
+
+Após completar o seu mestrado, é também praxe que qualquer publicação sobre ela tenha minha participação. 
+Temas derivados, porém, que não foram discutidos por nós, não se encaixam nesse perfil. 
+
+Basicamente,a regra é dar crédito a quem merece o crédito, e isso pode incluir outras pessoas. 
+
+Eu prefiro ter mais autores em um artigo do que devia do que ter menos.
+
+\chapter{A Revisão Bibliográfica}
+
+O aluno deve fazer uma ou mais revisões bibliográficas, que comporão o corpo da tese. 
+
+Para isso podem ser usadas metodologias como Revisão Sistemática, Mapeamento Sistemático, Revisão Rápida ou outra. Uma revisão \textit{ad-hoc} bem feita e descrita de forma a poder ser reproduzida pode ser aceita.
+
+O aluno deve obrigatoriamente revisar o histórico do problema e o estado da arte da solução. Dependendo da independência dos dois tópicos, em relação a perspectiva do aluno, isso pode ser resumido em um ou dois capítulos.
+
+\chapter{Leitura Obrigatória}
+
+Os alunos devem obrigatoriamente ler os seguintes textos antes de começar a dissertação:
+\begin{outline}
+\1 \listalivro{Dresch:2015}
+\1 Se você é da área de jogos
+\2 \listalivro{Xexeo:2017}
+\end{outline}
+
+\backmatter
+\printbibliography
+
+
+\end{document}
+
+
+
